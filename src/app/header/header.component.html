@@ -1,0 +1,17 @@
+<div class="main-div">
+    <nav [ngClass]="{'nav--fixed': !isSticky, 'nav--fixed sticky': isSticky}">
+       <input type="checkbox" id="check">
+       <label for="check">
+         <mat-icon id="btn">menu</mat-icon>
+         <mat-icon id="cancel">close</mat-icon>
+       </label>
+       <img src="/assets/nitish/NameofCompany5.svg" >
+       <ul id="menu">
+         <li><a href="#home" (click)="closeMenu()">Home</a></li>
+         <li><a href="#about" (click)="closeMenu()">About</a></li>
+         <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
+         <li><a href="#footer" (click)="closeMenu()">Contact</a></li>
+       </ul>
+     </nav>
+   </div>
+   
