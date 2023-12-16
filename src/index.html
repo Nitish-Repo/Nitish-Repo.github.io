@@ -9,8 +9,83 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    /* Set the background color of the whole page */
+    body {
+      background-color: #222428;
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+    }
+
+    /* Add your custom loading animation styles here */
+    .loading-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loadingio-spinner-ball-7d85l6q1lcm {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      overflow: hidden;
+      background: none;
+    }
+
+    .ldio-829ksoj98f {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform: translateZ(0) scale(1);
+      backface-visibility: hidden;
+      transform-origin: 0 0;
+    }
+
+    .ldio-829ksoj98f div {
+      position: absolute;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: #878e99;
+      left: 74px;
+      top: 20px;
+      animation: ldio-829ksoj98f 1s linear infinite;
+    }
+
+    @keyframes ldio-829ksoj98f {
+      0%, 100% {
+        animation-timing-function: cubic-bezier(0.45, 0, 0.9, 0.55);
+      }
+      0% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(0, 108px);
+        animation-timing-function: cubic-bezier(0, 0.45, 0.55, 0.9);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+  </style>
 </head>
 <body class="mat-typography">
+    <!-- Loading Animation -->
+    <div class="loading-container">
+      <div class="loadingio-spinner-ball-7d85l6q1lcm">
+        <div class="ldio-829ksoj98f">
+          <div></div>
+        </div>
+      </div>
+    </div>
   <app-root></app-root>
+  
+  <script>
+    // JavaScript to hide the loading animation after the entire project is loaded
+    window.onload = function () {
+      document.querySelector('.loading-container').style.display = 'none';
+    };
+  </script>
 </body>
 </html>

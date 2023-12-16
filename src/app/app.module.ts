@@ -11,6 +11,7 @@ import { IntroComponent } from './intro/intro.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ContactComponent } from './contact/contact.component';
     MatIconModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
