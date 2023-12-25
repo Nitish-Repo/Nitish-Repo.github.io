@@ -12,6 +12,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { SkillComponent } from './skill/skill.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatButtonModule } from '@angular/material/button';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatTabsModule,
     MatButtonModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
