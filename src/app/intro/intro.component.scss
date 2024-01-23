@@ -56,6 +56,13 @@
   transition: var(--transition);
   background: rgba(32, 34, 36, 0.871);
 }
+.mobileTab{
+  box-shadow: var(--shadow-1);
+  background: rgba(32, 34, 36, 0.871);
+  margin-top: 20px ;
+  transition: var(--transition);
+
+}
 
 .row2 {
   width: 100%;
@@ -167,35 +174,35 @@
   --mdc-tab-indicator-active-indicator-height: 5px !important;
 }
 
-@media screen and (max-width: 575px) {
-  .tab {
-    width: 350px !important;
-  }
-}
+// @media screen and (max-width: 575px) {
+//   .tab {
+//     width: 350px !important;
+//   }
+// }
 
-@media screen and (max-width: 475px) {
-  .tab {
-    width: 300px !important;
-  }
-}
+// @media screen and (max-width: 475px) {
+//   .tab {
+//     width: 300px !important;
+//   }
+// }
 
-@media screen and (max-width: 425px) {
-  .tab {
-    width: 275px !important;
-  }
-}
+// @media screen and (max-width: 425px) {
+//   .tab {
+//     width: 275px !important;
+//   }
+// }
 
-@media screen and (max-width: 400px) {
-  .tab {
-    width: 250px !important;
-  }
-}
+// @media screen and (max-width: 400px) {
+//   .tab {
+//     width: 250px !important;
+//   }
+// }
 
-@media (max-width: 715px) {
-  .tab {
-    width: 450px;
-  }
-}
+// @media (max-width: 715px) {
+//   .tab {
+//     width: 450px;
+//   }
+// }
 
 
 

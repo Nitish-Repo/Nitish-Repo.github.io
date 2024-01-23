@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-intro',
@@ -7,5 +7,16 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class IntroComponent {
+  showDiv = true; 
+
+  ngOnInit(): void {
+    this.onResize(); 
+  }
+
+  @HostListener('window:resize', [])
+  onResize(): void {
+    let width = window.innerWidth;
+    this.showDiv = width > 725;
+  }
 
 }
