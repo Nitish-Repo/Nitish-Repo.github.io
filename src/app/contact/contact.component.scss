@@ -198,6 +198,16 @@
     letter-spacing: normal;
     margin: 0 0 50px;
   }
+  @media screen and (max-width: 378px) {
+    #footer header.style1 h2 {
+      font-size: 50px;
+    }
+  }
+  @media screen and (max-width: 326px) {
+    #footer header.style1 h2 {
+      font-size: 40px;
+    }
+  }
   
   #footer header.style1 p {
     color: inherit;
@@ -367,6 +377,9 @@
   
     .container {
       width: calc(100% - 40px);
+    }
+    #page-wrapper{
+      margin: 1em 1em 1em 1em !important;
     }
   
   }
