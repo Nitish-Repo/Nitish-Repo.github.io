@@ -1,55 +1,54 @@
 <div id="page-wrapper">
-    <!-- Footer -->
-    <section id="footer" class="wrapper">
-        <!-- <div class="title"> Join the Noble Wave</div> -->
-        <div class="container">
-            <header class="style1">
-                <h2>Contact Me</h2>
-                <p>
-                    Ready to elevate your digital presence? Reach out to me today, and let's start building the future
-                    of your business together."
-                </p>
-            </header>
-            <div class="row">
-                <div class="col-6 col-12-medium">
-                    <section>
-                        <form method="post" action="#">
-                            <div class="row gtr-50" >
-                                <div class="col-6 col-12-small">
-                                    <input type="text" name="name" id="contact-name" placeholder="Name" />
-                                </div>
-                                <div class="col-6 col-12-small">
-                                    <input type="text" name="email" id="contact-email" placeholder="Email" />
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="message" id="contact-message" placeholder="Message"
-                                        rows="4"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <ul class="actions">
-                                        <li><input type="submit" class="style1" value="Send" /></li>
-                                        <li><input type="reset" class="style2" value="Reset" /></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </form>
-                    </section>
-
+  <!-- Footer -->
+  <section id="footer" class="wrapper">
+    <!-- <div class="title"> Join the Noble Wave</div> -->
+    <div class="container">
+      <header class="style1">
+        <h2>Contact Me</h2>
+        <p>
+          Ready to elevate your digital presence? Reach out to me today, and let's start building the future
+          of your business together."
+        </p>
+      </header>
+      <div class="row">
+        <div class="col-6 col-12-medium">
+          <section>
+            <form method="post" action="#" (ngSubmit)="onSubmit(formData.value)" #formData="ngForm">
+              <div class="row gtr-50">
+                <div class="col-6 col-12-small">
+                  <input type="text" name="name" ngModel id="contact-name" placeholder="Name" />
                 </div>
-                <div class="col-6 col-12-medium">
+                <div class="col-6 col-12-small">
+                  <input type="text" name="email" ngModel id="contact-email" placeholder="Email" />
+                </div>
+                <div class="col-12">
+                  <textarea name="message" ngModel id="contact-message" placeholder="Message" rows="4"></textarea>
+                </div>
+                <div class="col-12">
+                  <ul class="actions">
+                    <li><input type="submit" class="style1" value="Send" /></li>
+                    <li><input type="reset" class="style2" value="Reset" /></li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </section>
 
-                    <section class="feature-list small">
-                        <div class="row">
+        </div>
+        <div class="col-6 col-12-medium">
 
-                            <div class="col-6 col-12-small">
-                                <section>
-                                    <h3> <i class="fa-solid fa-envelope fa-fade"></i> Email</h3>
-                                    <p>
-                                        <a href="#">web.nitish.k@gmail.com</a>
-                                    </p>
-                                </section>
-                            </div>
-                            <!-- <div class="col-6 col-12-small">
+          <section class="feature-list small">
+            <div class="row">
+
+              <div class="col-6 col-12-small">
+                <section>
+                  <h3> <i class="fa-solid fa-envelope fa-fade"></i> Email</h3>
+                  <p>
+                    <a href="#">web.nitish.k@gmail.com</a>
+                  </p>
+                </section>
+              </div>
+              <!-- <div class="col-6 col-12-small">
                                 <section>
                                     <h3 class="icon solid fa-home">Mailing Address</h3>
                                     <p>
@@ -57,19 +56,19 @@
                                         1234 Somewhere Rd<br />
                                         Nashville, TN 00000
                                     </p>
-                                </section> 
-                            </div> -->
-                            <div>
-
-                                <section>
-                                    <h3> <i class="fa-solid fa-phone fa-fade"></i>Phone</h3>
-                                    <p>
-                                        (+91) 790 367-8303
-                                    </p>
                                 </section>
-                            </div>
+                            </div> -->
+              <div>
 
-                            <!-- <div class="col-6 col-12-small">
+                <section>
+                  <h3> <i class="fa-solid fa-phone fa-fade"></i>Phone</h3>
+                  <p>
+                    (+91) 790 367-8303
+                  </p>
+                </section>
+              </div>
+
+              <!-- <div class="col-6 col-12-small">
                                 <section>
                                     <h3 class="icon solid fa-comment">Social</h3>
                                     <p>
@@ -79,20 +78,20 @@
                                     </p>
                                 </section>
                             </div> -->
-                        </div>
-                    </section>
+            </div>
+          </section>
 
-                </div>
-            </div>
-            <div id="copyright">
-                <ul>
-                    <li>&copy;{{currentYear}} NITISH - Web Developer</li>
-                    <li>Designed : NITISH KUMAR</li>
-                    <!-- <li>CEO: <a href="">MD. IRSHAD ALI</a></li> -->
-                </ul>
-            </div>
         </div>
-    </section>
+      </div>
+      <div id="copyright">
+        <ul>
+          <li>&copy;{{currentYear}} NITISH - Web Developer</li>
+          <li>Designed : NITISH KUMAR</li>
+          <!-- <li>CEO: <a href="">MD. IRSHAD ALI</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </section>
 
 </div>
 
